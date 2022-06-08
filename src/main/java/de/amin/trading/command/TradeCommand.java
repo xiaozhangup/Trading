@@ -48,8 +48,12 @@ public class TradeCommand implements CommandExecutor, TabCompleter {
                 return true;
             }
             Player receiver = Bukkit.getPlayer(args[1]);
-            if (receiver == null || receiver == player) {
+            if (receiver == null) {
                 player.sendMessage(Messages.prefixed("command.trade.request.error.offline"));
+                return true;
+            }
+            if (receiver == player) {
+                player.sendMessage(Messages.prefixed("command.trade.request.error.self"));
                 return true;
             }
             tradingRequestManager.sendRequest(player, receiver);

@@ -2,7 +2,7 @@ prefix: "&8[&x&B&D&B&7&6&B交易&8] "
 request:
   sent: "&e已发送交易请求!"
   received: "&e你接受到了一个来自 &6{0} &e的交易请求!"
-  usage: "&e使用 &9/trade request accept &e接受请求."
+  usage: "&e使用 &9/trade accept &e接受请求."
 trade:
   finished: "&a交易成功完成!"
   cancelled: "&c交易被取消!"
