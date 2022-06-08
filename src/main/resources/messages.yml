@@ -20,9 +20,9 @@ command:
 inventory:
   title: "你              | {0}"
   item:
-    empty: "&7"
-    editing: "&7编辑中"
-    locked: "&a已被锁定"
-    waiting: "&c等待双方锁定交易."
-    finalize: "&b点击来完成交易."
-    finalized: "&a完成. 等待对方结束."
+    empty: "&r&7"
+    editing: "&r&7编辑中"
+    locked: "&r&a已被锁定"
+    waiting: "&r&c等待双方锁定交易"
+    finalize: "&r&b点击来完成交易"
+    finalized: "&r&a完成. 等待对方结束"
