@@ -1,27 +1,28 @@
-prefix: ""
+prefix: "&8[&x&B&D&B&7&6&B&8]"
 request:
-  sent: "&eRequest has been sent!"
-  received: "&eYou received a trade request by &6{0}&e!"
+  sent: "&e已发送交易请求!"
+  received: "&e你接受到了一个来自 &6{0} &e的交易请求!"
+  usage: "&e使用 &9/trade request accept &e接受请求."
 trade:
-  finished: "&aTrade was succesfully finished!"
-  cancelled: "&cTrade was cancelled!"
+  finished: "&a交易成功完成!"
+  cancelled: "&c交易被取消!"
 command:
   trade:
-    usage: "&7Usage&8:&9 /trade request <player> | accept"
+    usage: "&7使用&8:&9 /trade request <player> | accept"
     request:
-      usage: "&7Usage&8:&9 /trade request <player>"
+      usage: "&7使用&8:&9 /trade request <player>"
       error:
-        self: "&cYou can't request yourself."
-        offline: "&cPlayer not found"
+        self: "&c你不能请求你自己."
+        offline: "&c玩家未找到"
     accept:
       error:
-        no_request: "&cYou don't have any pending requests."
+        no_request: "&c里没有任何未处理的请求."
 inventory:
-  title: "You              | {0}"
+  title: "你              | {0}"
   item:
     empty: "&7"
-    editing: "&7EDITING"
-    locked: "&aLOCKED IN"
-    waiting: "&cWaiting for both players to lock in."
-    finalize: "&bClick to finalize trade."
-    finalized: "&aFinalized. Waiting for the other party."
+    editing: "&7编辑中"
+    locked: "&a已被锁定"
+    waiting: "&c等待双方锁定交易."
+    finalize: "&b点击来完成交易."
+    finalized: "&a完成. 等待对方结束."

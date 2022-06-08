@@ -16,6 +16,7 @@ public class TradingRequestManager {
     public void sendRequest(Player sender, Player receiver) {
         sender.sendMessage(Messages.prefixed("request.sent"));
         receiver.sendMessage(Messages.prefixed("request.received", sender.getName()));
+        receiver.sendMessage(Messages.prefixed("request.usage"));
 
         requests.put(receiver, sender);
     }
