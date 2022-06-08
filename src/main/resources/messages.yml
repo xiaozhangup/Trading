@@ -1,4 +1,4 @@
-prefix: "&8[&x&B&D&B&7&6&B&8]"
+prefix: "&8[&x&B&D&B&7&6&B交易&8] "
 request:
   sent: "&e已发送交易请求!"
   received: "&e你接受到了一个来自 &6{0} &e的交易请求!"
