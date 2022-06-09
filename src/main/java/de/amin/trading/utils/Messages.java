@@ -17,21 +17,21 @@ public class Messages {
         plugin.getLogger().info("Succesfully loaded Messages from messages.yml");
     }
 
-    public static Component get(String path, String... replacements) {
+    public static String get(String path, String... replacements) {
         String message = messageConfig.getString(path);
         if (message == null) {
-            return Component.text(ChatColor.RED + "<Missing: " + path + ">");
+            return ChatColor.RED + "<Missing: " + path + ">";
         }
 
         for (int i = 0; i < replacements.length; i++) {
             message = message.replace("{" + i + "}", replacements[i]);
         }
 
-        return LegacyComponentSerializer.legacy('&').deserialize(message);
+        return message.replace( "&", "§");
     }
 
-    public static Component prefixed(String path, String... replacements) {
-        return get("prefix").append(get(path, replacements));
+    public static String prefixed(String path, String... replacements) {
+        return get("prefix") + get(path, replacements);
     }
 
 }

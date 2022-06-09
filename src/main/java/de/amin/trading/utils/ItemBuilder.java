@@ -15,8 +15,8 @@ public class ItemBuilder {
         meta = itemStack.getItemMeta();
     }
 
-    public ItemBuilder setDisplayName(Component displayName) {
-        meta.displayName(displayName);
+    public ItemBuilder setDisplayName(String displayName) {
+        meta.setDisplayName(displayName);
         return this;
     }
 
