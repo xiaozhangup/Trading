@@ -26,7 +26,7 @@ public class InventoryListener implements Listener {
 
     @EventHandler
     public void onInventoryClick(InventoryClickEvent event) {
-        if (event.getClickedInventory() == null || !(event.getClickedInventory().getHolder() instanceof TradingHolder)) {
+        if (!(event.getInventory().getHolder() instanceof TradingHolder)) {
             return;
         }
         if(!event.getAction().equals(InventoryAction.PICKUP_ALL) && !event.getAction().equals(InventoryAction.PLACE_ALL)) {
